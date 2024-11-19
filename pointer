@@ -1,0 +1,36 @@
+// A simple CPP program to illustrate 
+// the concept of pointers and 
+// their manipulations in C/C++ 
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{ 
+int number = 88;	 
+int * pNumber; 
+	
+// assign the address of the variable number 
+// to pointer pNumber 
+pNumber = &number; 
+
+// Print content of pNumber 
+cout << pNumber << endl; 
+	
+// Print address of number 
+cout << &number << endl; 
+	
+// Print value pointed to by pNumber 
+cout << *pNumber << endl; 
+	
+// Print value of number 
+cout << number << endl; 
+
+// Re-assign value pointed to by pNumber 
+*pNumber = 99;			 
+cout << pNumber << endl; 
+cout << &number << endl; 
+cout << *pNumber << endl; 
+cout << number << endl; 
+							
+cout << &pNumber << endl; 
+} 
